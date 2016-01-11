@@ -55,11 +55,15 @@
     <Compile Include="ApplicationModule.cs" />
     <Compile Include="Classes\App.cs" />
     <Compile Include="Classes\DatabaseConnectionHandler.cs" />
+    <Compile Include="Classes\DatabaseHandler.cs" />
     <Compile Include="Classes\FileWriter.cs" />
     <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\WriteLoadsOfStringsToFile.cs" />
     <Compile Include="CompositionRoot.cs" />
+    <Compile Include="Interfaces\IHandleDatabase.cs" />
     <Compile Include="Interfaces\IHandleDatabaseConnection.cs" />
     <Compile Include="Interfaces\IWriteFile.cs" />
+    <Compile Include="Interfaces\IWriteLoadsOfStringsToFile.cs" />
     <Compile Include="MultiThread.cs" />
     <Compile Include="Interfaces\IApp.cs" />
     <Compile Include="Interfaces\ILog.cs" />

@@ -20,9 +20,6 @@
 
         public void GetConnection()
         {
-
-            if (Con != null) return;
-
             Con = new OracleConnection
             {
                 ConnectionString = OracleConnectionString

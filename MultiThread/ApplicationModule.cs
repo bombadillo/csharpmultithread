@@ -18,6 +18,9 @@
             });
             Bind(typeof(IWriteFile)).To(typeof(FileWriter));
             Bind(typeof(IHandleDatabaseConnection)).To(typeof(DatabaseConnectionHandler));
+            Bind(typeof(IWriteLoadsOfStringsToFile)).To(typeof(WriteLoadsOfStringsToFile));
+            Bind(typeof(IHandleDatabase)).To(typeof(DatabaseHandler)).InThreadScope();
+            //Kernel.Bind<IHandleDatabase>().To<DatabaseHandler>().InScope(o => { return o.Binding; });
         }
     }
 }
