@@ -19,11 +19,13 @@
         {
             Logger.Info("App started");                       
 
-            Thread tid1 = new Thread(() => WriteLoadsOfStringsToFile.WriteDemStrings("blah", 1));
-            Thread tid2 = new Thread(() => WriteLoadsOfStringsToFile.WriteDemStrings("munchkin", 2));
+            var threadOne = new Thread(() => WriteLoadsOfStringsToFile.WriteDemStrings("blah", 1));
+            var threadTwo = new Thread(() => WriteLoadsOfStringsToFile.WriteDemStrings("munchkin", 2));
 
-            tid1.Start();
-            tid2.Start();
+            threadOne.Start();
+            threadTwo.Start();
+
+            Logger.Info("App ended");
         }
 
     }
